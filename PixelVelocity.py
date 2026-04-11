@@ -9,7 +9,7 @@ class pixelvelocity():
         self.car = car
         self.track = track
 
-p1 = Car.car(2, "Player", Car.colors()[0], 1)
-Ai = Car.car(2, "Ai", Car.colors()[1], 1)
+p1 = Car.car(2, "Player", Car.car.colors()[0], 1)
+Ai = Car.car(2, "Ai", Car.car.colors()[1], 1)
 print(p1)
 print(Ai)
