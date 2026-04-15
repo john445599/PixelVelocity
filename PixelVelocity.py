@@ -1,16 +1,8 @@
 import os
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 import pygame
-import Car
 import random
-
-class pixelvelocity():
-    def __init__(self, car, track):
-        self.car = car
-        self.track = track
-
-p1 = Car.car(2, "Player", Car.car.colors()[0], 1)
-Ai = Car.car(2, "Ai", Car.car.colors()[1], 1)
+import sys
 
 #pygame design
 pygame.init()
@@ -40,8 +32,9 @@ while is_active:
     screen.blit(image1_1, (0, 0))
     screen.blit(image2_2, (0, 600))
 
-    pygame.draw.rect(screen, "white", (150, 50, 1450, 15))
+
     pygame.display.flip()
     clock.tick(60)
 
 pygame.quit()
+sys.exit()
